@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // let $ = 12;
 // let _ = 22;
@@ -361,8 +361,44 @@
 
 // console.log(5 * 5 == "25");
 
-const isTrue = false;
-const isFalse = false;
-const isChecked = false;
+// const isTrue = 12;
+// const isFalse = false;
+// const isChecked = false;
 
-console.log(!isTrue || isChecked || isFalse);
+// console.log(!isTrue || isChecked || isFalse);
+
+// isTrue > 18 ? console.log("no accept") : console.log("accept");
+
+
+// function about(yosh) {
+//     let natija;
+//     if (yosh <= 18) {
+//         natija = "open";
+//     } else {
+//         natija = "close";
+//     }
+//     return natija;
+// };
+
+// console.log(about(12)); 
+
+// let a = 3;
+// switch (a) {
+//     case 4:
+//         console.log("right");
+//         break;
+//         case 3:
+//         case 5:
+//             console.log("wrong");
+//             console.log("not good");
+//             break;
+//     default:
+//         console.log("mmmmmmmmm");
+//         break;
+// }
+
+// console.log(a);
+
+
+
+
