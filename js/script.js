@@ -399,6 +399,31 @@
 
 // console.log(a);
 
+let person = {
+    name: "John",
+    surname: "Smith",
+    age: 30,
+    isMarried: false,
+    adress: {
+        street: "123 MAIN st",
+        city: "karshi",
+        zipCode: 1232456
+    }
+};
 
+console.log(person.name);
+console.log(person.surname);
+
+person.age = 35;
+console.log(person.age);
+
+person.email = "fayziyevotabek3222@gmail.com";
+console.log(person.email);
+
+console.log(person.adress.street);
+
+for (let key in person){
+    console.log(key + ": " + person[key]);
+}
 
 
