@@ -382,8 +382,8 @@
 
 // console.log(about(12)); 
 
-// let a = 3;
-// switch (a) {
+// let f = +prompt("yoshingiz");
+// switch (f) {
 //     case 4:
 //         console.log("right");
 //         break;
@@ -397,33 +397,150 @@
 //         break;
 // }
 
-// console.log(a);
+// console.log(f);
 
-let person = {
-    name: "John",
-    surname: "Smith",
-    age: 30,
-    isMarried: false,
-    adress: {
-        street: "123 MAIN st",
-        city: "karshi",
-        zipCode: 1232456
-    }
+// let person = {
+//     name: "John",
+//     surname: "Smith",
+//     age: 30,
+//     isMarried: false,
+//     adress: {
+//         street: "123 MAIN st",
+//         city: "karshi",
+//         zipCode: 1232456
+//     }
+// };
+
+// console.log(person.name);
+// console.log(person.surname);
+
+// person.age = 35;
+// console.log(person.age);
+
+// person.email = "fayziyevotabek3222@gmail.com";
+// console.log(person.email);
+
+// console.log(person.adress.street);
+
+// for (let key in person){
+//     console.log(key + ": " + person[key]);
+// }
+
+
+
+
+// let numberOfSeries = prompt("Nechta serial ko`rdingiz?", "soni");
+
+// let seriesDB = {
+//     count: numberOfSeries,
+//     series: {},
+//     actors: {},
+//     genres: [],
+//     private: false
+// };
+
+// const a = prompt("Oxirgi ko`rgan serialingiz?"),
+// b = prompt("Nechi baxo berasiz?"),
+// c = prompt("Oxirgi ko`rgan serialingiz?"),
+// d = prompt("Nechi baxo berasiz?");
+
+// seriesDB.series.a = b;
+// seriesDB.series.c = d;
+
+// console.log(seriesDB);
+
+
+// -------------------- DO / WHILE ------------------------
+
+
+// let num = 1;
+
+// while(num <= 20){
+//     console.log(num);
+//     num++
+// };
+
+// do {
+//     console.log(num);
+//     num++
+// } while (num <= 10);
+
+
+// const hi = " hello world";
+// for (let a = 1; a <= 15; a++) {
+//     if (a === 9 && a <= 9) {
+//         continue;
+//     }
+//     console.log(a);
+// }
+
+
+// ---------- PRACTISE =---
+
+let numberOfSeries = prompt("Nechta serial ko`rdingiz?", "");
+
+let seriesDB = {
+    count: numberOfSeries,
+    series: {},
+    actors: {},
+    genres: [],
+    private: false
 };
 
-console.log(person.name);
-console.log(person.surname);
+// for (let num = 0; num <= 1; num++) {
+//     const a = prompt("Oxirgi ko`rgan serialingiz?"),
+//         b = prompt("Nechi baxo berasiz?");
 
-person.age = 35;
-console.log(person.age);
+//     if (a != "" && a != null && b != "" && b != null) {
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//     } else {
+//         alert("Iltimos javob bering");
+//         console.log("error");
+//         num--
+//     };
+// };
 
-person.email = "fayziyevotabek3222@gmail.com";
-console.log(person.email);
+//----------------------------
+let num = 0;
+// while (num <= 1) {
+//     const a = prompt("Oxirgi ko`rgan serialingiz?"),
+//         b = prompt("Nechi baxo berasiz?");
 
-console.log(person.adress.street);
+//     if (a != "" && a != null && b != "" && b != null) {
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//     } else {
+//         alert("Iltimos javob bering");
+//         console.log("error");
+//         num--
+//     };
+//     num++
+// };
+//---------------------------------
+do {
+    const a = prompt("Oxirgi ko`rgan serialingiz?"),
+        b = prompt("Nechi baxo berasiz?");
 
-for (let key in person){
-    console.log(key + ": " + person[key]);
-}
+    if (a != "" && a != null && b != "" && b != null) {
+        seriesDB.series[a] = b;
+        console.log("done");
+    } else {
+        alert("Iltimos javob bering");
+        console.log("error");
+        num--
+    };
+    num++
+} while (num <= 1);
+
+if (seriesDB.count < 5) {
+    confirm("Kam serial ko`ripsiz")
+} else if (seriesDB.count = 5 && seriesDB.count < 10) {
+    confirm("Siz classik tamoshabin ekansiz")
+} else {
+    confirm("Siz serialchi zvezda ekansiz")
+};
 
 
+
+console.log(seriesDB);
