@@ -614,7 +614,7 @@ function countCheck(count) {
 //     countCheck = undefined;  // Set countCheck to null when seriesDB.private is true
 // }
 
-console.log(countCheck(seriesDB.count));
+// console.log(countCheck(seriesDB.count));
 
 
 let genresINfo;
