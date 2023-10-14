@@ -52,7 +52,7 @@
 
 // // console.log(typeof(number));
 
-// // const bird = { 
+// // const bird = {
 // //     qushlar: "laylak"
 // // }
 // // bird.qushlar = "qarga"
@@ -140,12 +140,12 @@
 // // alert( user.key )                   // undefined
 
 
-// //  ----------------  [] tortburchak qavslar 
+// //  ----------------  [] tortburchak qavslar
 
 
 // // let fruit = prompt("Which fruit to buy?", "apple");
 
-// // let bag = { 
+// // let bag = {
 // //     [fruit]: "siz olmani tanladingiz"
 // // }
 
@@ -230,8 +230,8 @@
 
 
 // // butun sonlarni ozini yozganimizda ular
-// // 1 sonidan boshlab ketme ket kelishi mumkin 
-// // masalan bu misolda: 1, 41, 44, 49. 
+// // 1 sonidan boshlab ketme ket kelishi mumkin
+// // masalan bu misolda: 1, 41, 44, 49.
 // // bu muammoni hal qilish uchun sonlardan oldin va ozgaruvchidan
 // // oldin + belgisi qoyiladi
 // let codes = {
@@ -380,7 +380,7 @@
 //     return natija;
 // };
 
-// console.log(about(12)); 
+// console.log(about(12));
 
 // let a = 3;
 // switch (a) {
@@ -399,31 +399,242 @@
 
 // console.log(a);
 
-let person = {
-    name: "John",
-    surname: "Smith",
-    age: 30,
-    isMarried: false,
-    adress: {
-        street: "123 MAIN st",
-        city: "karshi",
-        zipCode: 1232456
+// let person = {
+//     name: "John",
+//     surname: "Smith",
+//     age: 30,
+//     isMarried: false,
+//     adress: {
+//         street: "123 MAIN st",
+//         city: "karshi",
+//         zipCode: 1232456
+//     }
+// };
+
+// console.log(person.name);
+// console.log(person.surname);
+
+// person.age = 35;
+// console.log(person.age);
+
+// person.email = "fayziyevotabek3222@gmail.com";
+// console.log(person.email);
+
+// console.log(person.adress.street);
+
+// for (let key in person){
+//     console.log(key + ": " + person[key]);
+// }
+
+
+
+
+// let numberOfSeries = prompt("Nechta serial ko`rdingiz?", "soni");
+
+// let seriesDB = {
+//     count: numberOfSeries,
+//     series: {},
+//     actors: {},
+//     genres: [],
+//     private: false
+// };
+
+// const a = prompt("Oxirgi ko`rgan serialingiz?"),
+// b = prompt("Nechi baxo berasiz?"),
+// c = prompt("Oxirgi ko`rgan serialingiz?"),
+// d = prompt("Nechi baxo berasiz?");
+
+// seriesDB.series.a = b;
+// seriesDB.series.c = d;
+
+// console.log(seriesDB);
+
+
+// ================ FUNCTION =============
+
+// ---------------------------------function decloration
+// function person(firstname, lastname) {
+//     return `hi ${firstname} ${lastname} siz talaba boldingiz!!!!`
+// };
+
+// console.log(person("ota", "fayziyev"));
+
+
+// //---------------------------------function expression
+// let a = function (s, d) {
+//     return s * d
+// };
+
+// console.log(a(2, 4));
+
+
+
+// // ----------------------------------arrow function
+// let hi = (Name) => `hi ${Name}`
+
+// console.log(hi("sava"));
+
+// // =======================
+
+// function x(a, b = 0) {
+//     return (2*(a + b))
+// };
+
+// console.log(x(2));
+
+
+// ==================== METHOD and PROPERTY ===
+
+// let user =  [1,2, 3, 4, 5, 6, 7, 8, 9];
+
+// console.log(user[2]);
+
+// let ism = "otabek";
+
+// console.log(ism[3] = "p" , ism);
+// console.log(ism);
+
+// const greeting = "hello world";
+// // console.log(greeting.indexOf("w"));    //  6
+
+// console.log(greeting.slice(6));    // hello
+// console.log(greeting.substring(0));  // hello world
+// console.log(greeting.substr(6, 3));  // world // from world 3 letter
+
+
+
+
+//                                        NUMBER METHODS
+
+// const num = 18.4;                           // 18
+// console.log(Math.round(num));
+
+
+// const data = "13.8px";
+// console.log(parseInt(data));                   // 13
+// console.log(parseFloat(data));                 //13.8
+
+
+// const numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+
+// const seriesDB = {
+//   count: numberOfSeries,
+//   series: {},
+//   actors: {},
+//   genres: [],
+//   private: false,
+// }
+
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt("Oxirgi ko'rgan serialingiz?"),
+//     b = prompt('Nechi baxo berasiz?')
+
+//   if (a != null && b != null && a != '' && b != '') {
+//     seriesDB.series[a] = b
+//     console.log('done')
+//   } else {
+//     console.log('error')
+//     i--
+//   }
+// }
+
+// if (seriesDB.count < 5) {
+//   console.log('Kam serial ko’ripsiz')
+// } else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+//   console.log('Siz classik tamoshabin ekansiz')
+// } else if (seriesDB.count >= 10) {
+//   console.log('Siz serialchi zvezda ekansiz')
+// } else {
+//   console.log('Error')
+// }
+
+// console.log(seriesDB)
+
+// ///=================================================================
+
+
+
+
+let numberOfSeries;
+function quiz() {
+    numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+
+    while (numberOfSeries == '' || numberOfSeries == null || isNaN(numberOfSeries)) {
+        alert("Iltimos tog`ri javob bering!")
+        numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
     }
+}
+quiz()
+
+const seriesDB = {
+    count: numberOfSeries,
+    series: {},
+    actors: {},
+    genres: [],
+    private: false
 };
 
-console.log(person.name);
-console.log(person.surname);
+function rememberSeries(params) {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt("Oxirgi ko'rgan serialingiz?"),
+            b = prompt("Nechi baxo berasiz?")
 
-person.age = 35;
-console.log(person.age);
+        if (a != null && b != null && a != '' && b != '') {
+            seriesDB.series[a] = b
+            console.log("done");
+        } else {
+            alert("Iltimos javob bering!!!")
+            console.log("error")
+            i--
+        }
+    }
+};
+rememberSeries();
 
-person.email = "fayziyevotabek3222@gmail.com";
-console.log(person.email);
-
-console.log(person.adress.street);
-
-for (let key in person){
-    console.log(key + ": " + person[key]);
+function countCheck(count) {
+    if (count < 5) {
+        let message = "Kam serial ko`ripsiz";
+        alert(message);
+        return message;
+    } else if (count >= 5 && seriesDB.count < 10) {
+        let message = "Siz classik tamoshabin ekansiz";
+        alert(message);
+        return message;
+    } else if (count > 10) {
+        let message = 'Siz serialchi zvezda ekansiz';
+        alert(message);
+        return message;
+    } else {
+        alert("Nechta serial korganingizni aytmadingiz!");
+        return null;  // Return null when there is no valid message
+    }
 }
 
+// if (seriesDB.private === true) {
+//     countCheck = undefined;  // Set countCheck to null when seriesDB.private is true
+// }
 
+console.log(countCheck(seriesDB.count));
+
+
+let genresINfo;
+function writeGenres(genre) {
+    for (let a = 0; a <= 2; a++) {
+        genresINfo = prompt(`Yaxshi ko'rgan janringiz ${a + 1}`);
+
+        genre[a] = genresINfo;
+    }
+
+
+}
+writeGenres(seriesDB.genres);
+
+function showDB(params) {
+    if (seriesDB.private != true) {
+        console.log(params);
+    } else {
+        alert("aaaaaaaaaaaaaaaaa what is wrong!!!!!!!!!!!")
+        console.log("ERROR");
+    }
+}
+showDB(seriesDB);
