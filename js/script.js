@@ -540,7 +540,7 @@
 
 // if (seriesDB.count < 5) {
 //   console.log('Kam serial ko’ripsiz')
-// } else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+// } else if (seriesDB.count >= 5 && seriesDB.count <. 10) {
 //   console.log('Siz classik tamoshabin ekansiz')
 // } else if (seriesDB.count >= 10) {
 //   console.log('Siz serialchi zvezda ekansiz')
@@ -555,86 +555,235 @@
 
 
 
-let numberOfSeries;
-function quiz() {
-    numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+// let numberOfSeries;
+// function quiz() {
+//     numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
 
-    while (numberOfSeries == '' || numberOfSeries == null || isNaN(numberOfSeries)) {
-        alert("Iltimos tog`ri javob bering!")
-        numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
-    }
-}
-quiz()
-
-const seriesDB = {
-    count: numberOfSeries,
-    series: {},
-    actors: {},
-    genres: [],
-    private: false
-};
-
-function rememberSeries(params) {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt("Oxirgi ko'rgan serialingiz?"),
-            b = prompt("Nechi baxo berasiz?")
-
-        if (a != null && b != null && a != '' && b != '') {
-            seriesDB.series[a] = b
-            console.log("done");
-        } else {
-            alert("Iltimos javob bering!!!")
-            console.log("error")
-            i--
-        }
-    }
-};
-rememberSeries();
-
-function countCheck(count) {
-    if (count < 5) {
-        let message = "Kam serial ko`ripsiz";
-        alert(message);
-        return message;
-    } else if (count >= 5 && seriesDB.count < 10) {
-        let message = "Siz classik tamoshabin ekansiz";
-        alert(message);
-        return message;
-    } else if (count > 10) {
-        let message = 'Siz serialchi zvezda ekansiz';
-        alert(message);
-        return message;
-    } else {
-        alert("Nechta serial korganingizni aytmadingiz!");
-        return null;  // Return null when there is no valid message
-    }
-}
-
-// if (seriesDB.private === true) {
-//     countCheck = undefined;  // Set countCheck to null when seriesDB.private is true
+//     while (numberOfSeries == '' || numberOfSeries == null || isNaN(numberOfSeries)) {
+//         alert("Iltimos tog`ri javob bering!")
+//         numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+//     }
 // }
+// quiz()
+
+// const seriesDB = {
+//     count: numberOfSeries,
+//     series: {},
+//     actors: {},
+//     genres: [],
+//     private: false
+// };
+
+// function rememberSeries(params) {
+//     for (let i = 0; i < 2; i++) {
+//         const a = prompt("Oxirgi ko'rgan serialingiz?"),
+//             b = prompt("Nechi baxo berasiz?")
+
+//         if (a != null && b != null && a != '' && b != '') {
+//             seriesDB.series[a] = b
+//             console.log("done");
+//         } else {
+//             alert("Iltimos javob bering!!!")
+//             console.log("error")
+//             i--
+//         }
+//     }
+// };
+// rememberSeries();
+
+// function countCheck(count) {
+//     if (count < 5) {
+//         let message = "Kam serial ko`ripsiz";
+//         alert(message);
+//         return message;
+//     } else if (count >= 5 && seriesDB.count < 10) {
+//         let message = "Siz classik tamoshabin ekansiz";
+//         alert(message);
+//         return message;
+//     } else if (count > 10) {
+//         let message = 'Siz serialchi zvezda ekansiz';
+//         alert(message);
+//         return message;
+//     } else {
+//         alert("Nechta serial korganingizni aytmadingiz!");
+//         return null;  // Return null when there is no valid message
+//     }
+// }
+
+// // if (seriesDB.private === true) {
+// //     countCheck = undefined;  // Set countCheck to null when seriesDB.private is true
+// // }
 
 // console.log(countCheck(seriesDB.count));
 
 
-let genresINfo;
-function writeGenres(genre) {
-    for (let a = 0; a <= 2; a++) {
-        genresINfo = prompt(`Yaxshi ko'rgan janringiz ${a + 1}`);
+// let genresINfo;
+// function writeGenres(genre) {
+//     for (let a = 0; a <= 2; a++) {
+//         genresINfo = prompt(`Yaxshi ko'rgan janringiz ${a + 1}`);
 
-        genre[a] = genresINfo;
-    }
+//         genre[a] = genresINfo;
+//     }
 
 
-}
-writeGenres(seriesDB.genres);
+// }
+// writeGenres(seriesDB.genres);
 
-function showDB(params) {
-    if (seriesDB.private != true) {
-        console.log(params);
-    } else {
-        alert("aaaaaaaaaaaaaaaaa what is wrong!!!!!!!!!!!")
-        console.log("ERROR");
-    }
-}
-showDB(seriesDB);
+// function showDB(params) {
+//     if (seriesDB.private != true) {
+//         console.log(params);
+//     } else {
+//         alert("aaaaaaaaaaaaaaaaa what is wrong!!!!!!!!!!!")
+//         console.log("ERROR");
+//     }
+// }
+// showDB(seriesDB);
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// ========================= C A L L B A C K  =====================================
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// function num1(cb) {
+//     setTimeout(() => {
+//         console.log(1);
+//         cb()
+//     }, 1000);
+// };
+
+// function num2() {
+//     console.log(2);
+// };
+
+// num1(num2);                         //   callback function
+// // num1(function num2() {           anonym function
+// //     console.log(2);
+// // });
+
+// function edu(subject, callback) {
+//     console.log(`--I wanna learn ${subject}`);
+//     callback(subject)
+// };
+
+// edu("JAVASCRIPT", function (subject) {
+//     console.log(`--${subject} thats great!!!`);
+// });
+
+//                     object method
+
+// const theif = {
+//     jacket: true,
+//     hair: "jingalak",
+//     colors: {
+//         jacket: "black",
+//         hair: "grey"
+//     }
+// };
+
+// const { jacket, hair } = theif.colors;                              // destruptizatsiya
+// console.log(jacket);
+// console.log(hair);
+
+// for (let key in theif) {
+//     if (typeof theif[key] === "object") {
+//         for (let i in theif[key]) {
+//             console.log(`Property ${i} has value ${theif[key][i]} `)
+//         }
+//     } else {
+//         console.log(`Property ${key} has value ${theif[key]} `)
+//     }
+// };
+
+// delete theif.colors.hair
+
+// console.log(theif);
+
+// console.log(Object.keys(theif).length);
+
+
+//---------------------- O B J E C T METHOD-------------------------------------------
+
+// const person = {
+//     name: "Otabek",
+//     surname: "Fayziyev",
+//     age: 19,
+//     contact: {
+//         phone: 906746297,
+//         email: "fayziyevotabek32@gmail.com"
+//     },
+//     adress: {
+//         city: "Karshi",
+//         nightborhood: "Aralovul",
+//         street: "Ozodlik",
+//         Num: 3
+//     },
+//     eduDegree: "bachelor"
+// };
+
+// for (let key in person) {
+//     if (typeof person[key] === "object") {
+//         for (let i in person[key]) {
+//             console.log(`${i}:  ${person[key][i]}`);
+//         }
+//     } else {
+//         console.log(`${key}: ${person[key]}`);
+//     }
+// };
+
+// console.log(person);
+// const { name, surname, age, eduDegree } = person;
+// console.log(`person's name is ${name}`);
+// console.log(`person's surname is ${surname}`);
+// console.log(`person's age is ${age} years old`);
+// console.log(`person's education degree is ${eduDegree}`);
+
+// const { phone, email } = person.contact
+// console.log(`Contact information of ${name}, Phone: ${phone} Email: ${email} `);
+
+
+
+// --------------- A R R A Y METHOD - ----------------
+
+const arr = [32, 23, 54, 75, 42, 1];
+// arr.sort((a,b) => a-b)
+arr.sort();
+function compareFn(a, b) {
+    return a - b
+};
+console.log(arr);
+
+// arr.forEach(function (value, index, array) {
+//     console.log(`${index}: ${value} into arr ${array}`);
+// })
+
+// arr.forEach((value, index, array) => {
+//     console.log(`${index}: ${value} into arr ${array}`);                        //FOREACH
+// });
+
+// arr[0] = 0;
+// console.log(arr);
+
+// for (const iterator of arr) {
+//     console.log(iterator);
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// // arr.pop()                          // Removes the last element from an array and returns it = 6
+// // arr.push(7)                        // Appends new elements to the end of an array = 7
+// // arr.shift()                        // Removes the first element from an array
+// // arr.unshift(3)                     // Inserts new elements at the start of an array
+// console.log(arr);
+
+
+
+// const movies = prompt("What's your favorite movies?", "");
+// const userMovies = movies.split(/,\s*|\s+\.?\s*/);
+// userMovies.sort();
+// console.log(userMovies);
+
+
