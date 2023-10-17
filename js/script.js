@@ -399,7 +399,7 @@
 
 // console.log(a);
 
-// let person = {
+// let User = {
 //     name: "John",
 //     surname: "Smith",
 //     age: 30,
@@ -411,19 +411,19 @@
 //     }
 // };
 
-// console.log(person.name);
-// console.log(person.surname);
+// console.log(User.name);
+// console.log(User.surname);
 
-// person.age = 35;
-// console.log(person.age);
+// User.age = 35;
+// console.log(User.age);
 
-// person.email = "fayziyevotabek3222@gmail.com";
-// console.log(person.email);
+// User.email = "fayziyevotabek3222@gmail.com";
+// console.log(User.email);
 
-// console.log(person.adress.street);
+// console.log(User.adress.street);
 
-// for (let key in person){
-//     console.log(key + ": " + person[key]);
+// for (let key in User){
+//     console.log(key + ": " + User[key]);
 // }
 
 
@@ -453,11 +453,11 @@
 // ================ FUNCTION =============
 
 // ---------------------------------function decloration
-// function person(firstname, lastname) {
+// function User(firstname, lastname) {
 //     return `hi ${firstname} ${lastname} siz talaba boldingiz!!!!`
 // };
 
-// console.log(person("ota", "fayziyev"));
+// console.log(User("ota", "fayziyev"));
 
 
 // //---------------------------------function expression
@@ -705,7 +705,7 @@
 
 //---------------------- O B J E C T METHOD-------------------------------------------
 
-// const person = {
+// const User = {
 //     name: "Otabek",
 //     surname: "Fayziyev",
 //     age: 19,
@@ -722,37 +722,37 @@
 //     eduDegree: "bachelor"
 // };
 
-// for (let key in person) {
-//     if (typeof person[key] === "object") {
-//         for (let i in person[key]) {
-//             console.log(`${i}:  ${person[key][i]}`);
+// for (let key in User) {
+//     if (typeof User[key] === "object") {
+//         for (let i in User[key]) {
+//             console.log(`${i}:  ${User[key][i]}`);
 //         }
 //     } else {
-//         console.log(`${key}: ${person[key]}`);
+//         console.log(`${key}: ${User[key]}`);
 //     }
 // };
 
-// console.log(person);
-// const { name, surname, age, eduDegree } = person;
-// console.log(`person's name is ${name}`);
-// console.log(`person's surname is ${surname}`);
-// console.log(`person's age is ${age} years old`);
-// console.log(`person's education degree is ${eduDegree}`);
+// console.log(User);
+// const { name, surname, age, eduDegree } = User;
+// console.log(`User's name is ${name}`);
+// console.log(`User's surname is ${surname}`);
+// console.log(`User's age is ${age} years old`);
+// console.log(`User's education degree is ${eduDegree}`);
 
-// const { phone, email } = person.contact
+// const { phone, email } = User.contact
 // console.log(`Contact information of ${name}, Phone: ${phone} Email: ${email} `);
 
 
 
 // --------------- A R R A Y METHOD - ----------------
 
-const arr = [32, 23, 54, 75, 42, 1];
-// arr.sort((a,b) => a-b)
-arr.sort();
-function compareFn(a, b) {
-    return a - b
-};
-console.log(arr);
+// const arr = [32, 23, 54, 75, 42, 1];
+// // arr.sort((a,b) => a-b)
+// arr.sort();
+// function compareFn(a, b) {
+//     return a - b
+// };
+// console.log(arr);
 
 // arr.forEach(function (value, index, array) {
 //     console.log(`${index}: ${value} into arr ${array}`);
@@ -787,3 +787,211 @@ console.log(arr);
 // console.log(userMovies);
 
 
+// ====================================
+//              C L O N L A SH
+// ====================================
+
+//                                        object
+// const obj = {
+//     x: 10,
+//     y: 20,
+// };
+
+// const ob = {
+//     a:100
+// }
+
+// const newObj = Object.assign(ob, obj)
+// newObj.x = "ozgartirildi"
+// console.log(obj);
+// console.log(newObj);
+
+//                               array
+// const arr = [1, 2, 3];
+
+// const newArr  = arr.slice()
+// newArr[2] = "hi my name is bolta" 
+
+// console.log(arr);
+// console.log(newArr);
+
+// SPREAD [...]
+
+// let arr1 = [1,2,3,4,5]
+// let arr2 = ["a","b","v","g","d"]
+
+// const newarr  = [...arr1, ...arr2]
+
+// console.log(newarr);
+
+// const arr = [1, 2, 3,];
+
+// function num(x, y, z) {
+//     console.log(x + y + z);
+// }
+// num(...arr)                        //SPREAD
+
+// let abj = {
+//     x: 1,
+//     y: 2
+// }
+
+// let newAbj = {...abj}                     // object SPREAD
+// newAbj.x = 1000;
+
+// console.log(abj);
+// console.log(newAbj);
+
+
+// ============================================
+
+//                     O O P           
+
+// // =======================================
+
+
+//                            C L A S S  YORDAMIDA OBJECT  
+
+// class User {
+//     constructor(name, surname, age, job) {
+//         this.name = name,
+//             this.surname = surname,
+//             this.age = age,
+//             this.job = job,
+//             this.fullname = function () {
+//                 console.log("User's fullname is ", this.name, this.surname);
+//             }
+//     }
+// };
+
+// const UserObj = new User("Otabek", "Fayziyev", 19, "MERN developer");
+// const UserObj2 = new User("nargiza", "boltayeva", 39, "teacher");
+
+// UserObj.fullname();                     // user full name is fayziyev otabek
+
+// console.log("user age is " + UserObj.age);        // user age is 19
+// console.log(UserObj);
+
+
+
+// class Person {
+//     constructor(name, age, designation){
+//         this.name = name
+//         this.age = age
+//         this.designation = designation
+//         this.getName = function() {
+//             console.log("Name is:", this.name)
+//         }
+//     }
+// }
+// const personObject = new Person("‘Abdullo’", 20, "‘Web Developer’")
+// personObject.getName()
+// // Name is: Abdullo
+// console.log("“Age is”", personObject.age)
+// // Age is 20
+// console.log("“Designation is:”", personObject.designation)
+// // Designation is: Web Developer
+// console.log(personObject);
+
+
+
+//                       E N C A P S U L A T I O N                        //
+
+// const person = function (_name, _title) {
+//     const name = _name
+//     const title = _title
+
+//     return {
+//         details: function () {
+//             console.log(`${name} is a ${title}`)
+//         }
+//     }
+// };
+
+// const personObj = new person("otabek", "title");
+
+// personObj.details()
+
+
+
+
+// ============   A B S T R U C T I O N    ==================
+
+// const Person = function (_name, _title){
+//     const name = _name
+//     const title = _title
+
+//     this.getName = function(){
+//         return name
+//     }
+
+//     const details = function(){
+//         return `${name} is a ${title}`
+//     }
+
+//     this.getDetails = function(){
+//         return details()
+//     }
+// }
+
+// const person = new Person("Otabek", "Mern developer");
+// console.log(person.getName());
+// console.log(person.getDetails());
+
+
+// =======================================================
+
+//               I N H E R I T E N C E 
+
+
+// class animal {
+//     constructor(name) {
+//         this.name = name
+//     }
+
+//     sayHello() {
+//         console.log(`Hello, I'm ${this.name}`);
+//     }
+// }
+
+// class dog extends animal{
+//     constructor(name, breed) {
+//         super(name)
+//         this.breed = breed
+//     }
+//     bark() {
+//         console.log("woof, woof");
+//     }
+// }
+
+// const newAnimal = new dog("catty", "nasli zottor");
+// newAnimal.sayHello();
+// newAnimal.bark();
+
+
+
+// -------------------------------------------------
+
+function animal(name) {
+    this.name = name
+};
+
+animal.prototype.sayHello = function () {
+    console.log(`hiii, my name is ${this.name}`);
+}
+
+function dog(breed) {
+    animal.call(this.name);
+    this.breed = breed
+}
+
+dog.prototype = Object.create(animal.prototype)
+
+dog.prototype.bark = function () {
+    console.log("woof woof")
+}
+
+const newDog = new dog("cherry", "asilzodalar");
+
+newDog.sayHello();
+newDog.bark();
