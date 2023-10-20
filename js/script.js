@@ -429,10 +429,10 @@
 
 
 
-// let numberOfSeries = prompt("Nechta serial ko`rdingiz?", "soni");
+// let seriesDB.seriesDB.count = prompt("Nechta serial ko`rdingiz?", "soni");
 
 // let seriesDB = {
-//     count: numberOfSeries,
+//     seriesDB.count: seriesDB.seriesDB.count,
 //     series: {},
 //     actors: {},
 //     genres: [],
@@ -515,10 +515,10 @@
 // console.log(parseFloat(data));                 //13.8
 
 
-// const numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+// const seriesDB.seriesDB.count = +prompt("Nechta serial ko'rdingiz?", '')
 
 // const seriesDB = {
-//   count: numberOfSeries,
+//   seriesDB.count: seriesDB.seriesDB.count,
 //   series: {},
 //   actors: {},
 //   genres: [],
@@ -538,11 +538,11 @@
 //   }
 // }
 
-// if (seriesDB.count < 5) {
+// if (seriesDB.seriesDB.count < 5) {
 //   console.log('Kam serial ko’ripsiz')
-// } else if (seriesDB.count >= 5 && seriesDB.count <. 10) {
+// } else if (seriesDB.seriesDB.count >= 5 && seriesDB.seriesDB.count <. 10) {
 //   console.log('Siz classik tamoshabin ekansiz')
-// } else if (seriesDB.count >= 10) {
+// } else if (seriesDB.seriesDB.count >= 10) {
 //   console.log('Siz serialchi zvezda ekansiz')
 // } else {
 //   console.log('Error')
@@ -555,19 +555,19 @@
 
 
 
-// let numberOfSeries;
+// let seriesDB.seriesDB.count;
 // function quiz() {
-//     numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+//     seriesDB.seriesDB.count = +prompt("Nechta serial ko'rdingiz?", '')
 
-//     while (numberOfSeries == '' || numberOfSeries == null || isNaN(numberOfSeries)) {
+//     while (seriesDB.seriesDB.count == '' || seriesDB.seriesDB.count == null || isNaN(seriesDB.seriesDB.)) {
 //         alert("Iltimos tog`ri javob bering!")
-//         numberOfSeries = +prompt("Nechta serial ko'rdingiz?", '')
+//         seriesDB.seriesDB.count = +prompt("Nechta serial ko'rdingiz?", '')
 //     }
 // }
 // quiz()
 
 // const seriesDB = {
-//     count: numberOfSeries,
+//     seriesDB.count: seriesDB.seriesDB.count,
 //     series: {},
 //     actors: {},
 //     genres: [],
@@ -591,16 +591,16 @@
 // };
 // rememberSeries();
 
-// function countCheck(count) {
-//     if (count < 5) {
+// function seriesDB.countCheck(seriesDB.count) {
+//     if (seriesDB.count < 5) {
 //         let message = "Kam serial ko`ripsiz";
 //         alert(message);
 //         return message;
-//     } else if (count >= 5 && seriesDB.count < 10) {
+//     } else if (seriesDB.count >= 5 && seriesDB.seriesDB.count < 10) {
 //         let message = "Siz classik tamoshabin ekansiz";
 //         alert(message);
 //         return message;
-//     } else if (count > 10) {
+//     } else if (seriesDB.count > 10) {
 //         let message = 'Siz serialchi zvezda ekansiz';
 //         alert(message);
 //         return message;
@@ -611,10 +611,10 @@
 // }
 
 // // if (seriesDB.private === true) {
-// //     countCheck = undefined;  // Set countCheck to null when seriesDB.private is true
+// //     seriesDB.countCheck = undefined;  // Set seriesDB.Check to null when seriesDB.private is true
 // // }
 
-// console.log(countCheck(seriesDB.count));
+// console.log(seriesDB.countCheck(seriesDB.seriesDB.));
 
 
 // let genresINfo;
@@ -810,7 +810,7 @@
 // const arr = [1, 2, 3];
 
 // const newArr  = arr.slice()
-// newArr[2] = "hi my name is bolta" 
+// newArr[2] = "hi my name is bolta"
 
 // console.log(arr);
 // console.log(newArr);
@@ -845,12 +845,12 @@
 
 // ============================================
 
-//                     O O P           
+//                     O O P
 
 // // =======================================
 
 
-//                            C L A S S  YORDAMIDA OBJECT  
+//                            C L A S S  YORDAMIDA OBJECT
 
 // class User {
 //     constructor(name, surname, age, job) {
@@ -941,7 +941,7 @@
 
 // =======================================================
 
-//               I N H E R I T E N C E 
+//               I N H E R I T E N C E
 
 
 // class animal {
@@ -972,26 +972,178 @@
 
 // -------------------------------------------------
 
-function animal(name) {
-    this.name = name
-};
+// function animal(name) {
+//     this.name = name
+// };
 
-animal.prototype.sayHello = function () {
-    console.log(`hiii, my name is ${this.name}`);
-}
+// animal.prototype.sayHello = function () {
+//     console.log(`hiii, my name is ${this.name}`);
+// }
 
-function dog(breed) {
-    animal.call(this.name);
-    this.breed = breed
-}
+// function dog(breed) {
+//     animal.call(this.name);
+//     this.breed = breed
+// }
 
-dog.prototype = Object.create(animal.prototype)
+// dog.prototype = Object.create(animal.prototype)
 
-dog.prototype.bark = function () {
-    console.log("woof woof")
-}
+// dog.prototype.bark = function () {
+//     console.log("woof woof")
+// }
 
-const newDog = new dog("cherry", "asilzodalar");
+// const newDog = new dog("cherry", "asilzodalar");
 
-newDog.sayHello();
-newDog.bark();
+// newDog.sayHello();
+// newDog.bark();
+
+// ====================================================================================================
+
+//                                 A M A L I Y O T
+
+// ==================================================================================================
+
+// const seriesDB = {
+//     count: 0,
+//     series: {},
+//     actors: {},
+//     genres: [],
+//     private: false,
+
+//     start: function () {
+//         seriesDB.count = +prompt("Nechta serial ko'rdingiz?", '');
+
+//         while (isNaN(seriesDB.count)) {
+//             alert("Iltimos tog`ri javob bering!");
+//             seriesDB.count = +prompt("Nechta serial ko'rdingiz?", '');
+//         }
+//     },
+
+//     rememberSeries: function () {
+//         for (let i = 0; i < 2; i++) {
+//             const a = prompt("Oxirgi ko'rgan serialingiz?");
+//             const b = prompt("Nechi baxo berasiz?");
+
+//             if (a != null && b != null && a.trim() !== '' && b.trim() !== '') {
+//                 seriesDB.series[a] = b;
+//                 console.log("done");
+//             } else {
+//                 alert("Iltimos javob bering!!!");
+//                 console.log("error");
+//                 i--;
+//             }
+//         }
+//     },
+
+//     countCheck: function () {
+//         if (seriesDB.count < 5) {
+//             let message = "Kam serial ko`ripsiz";
+//             alert(message);
+//             return message;
+//         } else if (seriesDB.count < 10) {
+//             let message = "Siz classik tamoshabin ekansiz";
+//             alert(message);
+//             return message;
+//         } else {
+//             let message = 'Siz serialchi zvezda ekansiz';
+//             alert(message);
+//             return message;
+//         }
+//     },
+
+//     writeGenres: function () {
+//         // for (let a = 0; a < 3; a++) {
+//         //     const genreInfo = prompt(`Yaxshi ko'rgan janringiz ${a + 1}`);
+
+//         //     if (genreInfo === "" || genreInfo === null) {
+//         //         alert("iltimos javob bering!!")
+//         //         a--
+//         //     } else {
+//         //         seriesDB.genres[a] = genreInfo;
+//         //         console.log("done");
+//         //     }
+//         // }
+
+//         let genress = prompt(`Yaxshi ko'rgan janrlaringizni vergul (,) yoki bo'sh joy tashlash orqali yozing`)
+//         if (genress === "" || genress === null) {
+//             alert("iltimos javob bering!!")
+//             a--
+//         } else {
+//             seriesDB.genres = genress.split(/,\s*|\s+\.?\s*/);
+//             console.log("done");
+//         }
+
+//         seriesDB.genres.forEach((item, index) => {
+//             console.log(`Yaxshi ko'rgan janringiz #${index + 1} - nomi "${item}"`);
+//         })
+//     },
+
+//     showDB: function () {
+//         if (!seriesDB.private) {
+//             console.log(seriesDB);
+//         } else {
+//             alert("There's an issue!");
+//             console.log("ERROR");
+//         }
+//     },
+
+//     visibleDB: function () {
+//         if (seriesDB.private) {
+//             seriesDB.private = false
+//           } else {
+//             seriesDB.private = true
+//         }
+//     }
+// };
+
+
+
+// ///////////////////////////////////////////////////////////////
+
+//                   D  O  M                D  O  M     
+
+///////////////////////////////////////////////////////////////////
+
+// const box = document.getElementById("box");
+
+// const buttuns= document.getElementsByTagName("button");
+
+// const circle = document.getElementsByClassName('circle')
+// console.log(circle);
+
+// new way 
+const box = document.querySelector('#box')
+const buttons = document.querySelectorAll('button')
+const hearts = document.querySelectorAll('.heart')
+hearts[1].style.cssText = 'background: yellow;';
+const circles = document.querySelectorAll('.circle')
+
+// circles[1].style.width = '200px'
+
+
+// box.style.background = 'red';
+// buttons[0].style.cssText = 'background: yellow; width :150px; '
+
+// for (let i = 0; i < hearts.length; i++) {
+//     hearts[i].style.backgroundColor = "black"
+// };
+
+// hearts.forEach((item) => {
+//     item.style.backgroundColor = "green"
+// })
+
+
+// ==================================
+const mycircle__wrapper = document.querySelector('.circle__wrapper')
+const myCircle = document.createElement('div');
+myCircle.classList.add('circle');
+// myCircle.textContent = 'E'
+mycircle__wrapper.append(myCircle)
+myCircle.style.backgroundColor = "black";
+// circles[1].after(myCircle)
+// circles[1].remove()
+// circles[1].replaceWith(myCircle)
+myCircle.innerHTML = "E"
+// =================================
+
+mycircle__wrapper.insertAdjacentHTML ('afterbegin', 'heello')
+
